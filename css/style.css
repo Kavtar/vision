@@ -1,0 +1,75 @@
+body {
+	background-image: url("img/background.jpg");
+}
+
+.menu-items {
+	border-style: outset;
+	text-align: center;
+}
+
+nav {
+	padding: 0;
+	margin: 0;
+}
+
+.logo {
+	float:left;
+}
+
+.navbar {
+	float:right;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+	margin:15px;
+}
+
+.wall {
+	background-color: #b3ffff;
+}
+
+header::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.main-text {
+	font-family: "BPG Irubaqidze", sans-serif;
+	font-size: 25px;
+	color: green;
+}
+
+.header-question {
+	font-family: "BPG Irubaqidze", sans-serif;
+	font-size: 36px;
+	color: black;
+}
+
+main::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.course-img {
+	width: 24%;
+	height: 5%;
+}
+
+@media (max-width: 600px) {
+	.course-img {
+		width: 48%;
+		height: 10%;
+	}
+
+main .smiley {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
