@@ -1,5 +1,5 @@
 body {
-	background-image: url("img/background.jpg");
+
 }
 
 .menu-items {
@@ -30,8 +30,10 @@ li {
 	margin:15px;
 }
 
-.wall {
-	background-color: #80ff80;
+main {
+	background-image: url("../wallpaper.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header::after {
@@ -80,4 +82,8 @@ main .smiley {
 	content: " ";
 	display: block;
 	clear: both;
+}
+
+.text {
+	z-index: 1;
 }
