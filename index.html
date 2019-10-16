@@ -13,24 +13,36 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 		</head>
 
-		<body class="container-fluid wall"> 
+		<body> 
 			
-			<header>
-			<a href="#" alt="vector"> <img src="img/logo.png" class="d-inline-block img-fluid logo"></a>				
-				<nav class="navbar navbar-expand-lg navbar-light">
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				    <div class="navbar-nav">
-				      <a class="nav-item nav-link text-info" href="login.html"><h6> ავტორიზაცია </h6> <span class="sr-only">(current)</span></a>
-				      <a class="nav-item nav-link text-info" href="signup.html"><h6> რეგისტრაცია </h6></a>
-				    </div>
-				  </div>
+			<header class="bg-secondary sticky-top">
+				<a href="#" alt="vision"> <img src="img/logo.png" class="d-inline-block img-fluid logo"></a>
+
+				<nav class="navbar navbar-expand-lg navbar-light login-signup">
+					<a href="index.html"> <button type="button" class="btn btn-primary btn-sm"> ავტორიზაცია </button> </a>
+					<a href="signup.html"> <button type="button" class="btn btn-secondary btn-sm"> რეგისტრაცია </button> </a>
 				</nav>
+
+				<nav>
+					<ul class="nav nav-tabs">
+					  <li class="nav-item">
+					    <a class="nav-link active" href="#">Active</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Link</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Link</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+					  </li>
+					</ul>
+				</nav>
+				
 			</header>
 
-			<main class="containter">
+			<main class="containter-fluid wall">
 				<h3 class="container header-question">
 					რა არის პროგრამირება და რატომ უნდა ვისწავლოთ ის?
 				</h3>
