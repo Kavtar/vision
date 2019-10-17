@@ -22,18 +22,26 @@ nav {
 	float:right;
 }
 
-ul {
-  list-style-type: none;
-}
-
 li {
-	margin:15px;
+	margin:10px;
 }
 
 main {
 	background-image: url("../wallpaper.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+main::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.about-us::after {
+	content: " ";
+	display: block;
+	clear: both;
 }
 
 header::after {
