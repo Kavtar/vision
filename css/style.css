@@ -38,10 +38,10 @@ main::after {
 	clear: both;
 }
 
-.about-us::after {
-	content: " ";
-	display: block;
-	clear: both;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 header::after {
@@ -106,11 +106,4 @@ main .smiley {
 	.about-us-section {
 		height: 200%;
 	}
-}
-
-.flex-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 45px;
 }
