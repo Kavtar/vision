@@ -79,11 +79,11 @@ section::before {
 	height: 5%;
 }
 
-@media (max-width: 600px) {
-	.course-img {
-		width: 48%;
-		height: 10%;
+@media (max-width: 768px) {
+	.computer-pic {
+		display: none;
 	}
+}
 
 main .smiley {
 	display: block;
