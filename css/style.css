@@ -68,6 +68,12 @@ main::after {
 	clear: both;
 }
 
+section::before {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
 .course-img {
 	width: 24%;
 	height: 5%;
@@ -94,4 +100,10 @@ main .smiley {
 
 .text {
 	z-index: 1;
+}
+
+@media (max-width: 1000px) {
+	section {
+		height: 620px;
+	}
 }
