@@ -103,7 +103,14 @@ main .smiley {
 }
 
 @media (max-width: 1000px) {
-	section {
-		height: 620px;
+	.about-us-section {
+		height: 200%;
 	}
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 45px;
 }
