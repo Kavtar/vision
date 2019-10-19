@@ -16,34 +16,59 @@
 		<body> 
 			
 			<header class="bg-secondary sticky-top">
-				<a href="#" alt="vision"> <img src="img/logo.png" class="d-inline-block img-fluid logo"></a>
-
-				<nav class="navbar navbar-expand-lg navbar-light login-signup">
-					<a href="index.html"> <button type="button" class="btn btn-secondary btn-sm text-white">ავტორიზაცია</button> </a>
-					<a href="registration.html"> <button type="button" class="btn btn-secondary btn-sm text-white">რეგისტრაცია</button> </a>
-				</nav>
+				<a href="index.html" alt="vision"> <img src="img/logo.png" class="d-inline-block img-fluid logo"></a>
 
 				<nav>
-					<ul class="nav nav-tabs">
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">მთავარი</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#aboutus">ჩვენ შესახებ</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#ourcourses">ჩვენი კურსები</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-					  </li>
-					</ul>
+					<div class="navbar navbar-expand-lg navbar-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    		<span class="navbar-toggler-icon"></span>
+				  		</button>
+				  		<div id="navbarNavAltMarkup">
+							<a href="index.html"> <button type="button" class="btn btn-secondary btn-sm text-white">ავტორიზაცია</button> </a>
+							<a href="registration.html"> <button type="button" class="btn btn-secondary btn-sm text-white">რეგისტრაცია</button> </a>
+						</div>
+					</div>
+					<div>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    		<span class="navbar-toggler-icon"></span>
+				  		</button>
+				  		<div>
+							<div id="navbarNavAltMarkup">
+								<ul class="nav nav-tabs">
+								  <li class="nav-item">
+								    <a class="nav-link" href="index.html">მთავარი</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#aboutus">ჩვენ შესახებ</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link" href="#ourcourses">ჩვენი კურსები</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+								  </li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</nav>
 				
 			</header>
 			
 			<main class="containter-fluid img-fluid device-width" style="padding: 15% 15% 15% 0;" id="login">
 				<form>
+				  <div class="form-group row">
+				    <label for="inputEmail3" class="col-sm-2 col-form-label text-light">სახელი</label>
+				    <div class="col-sm-10">
+				      <input type="email" style="width:25%;" class="form-control" id="inputEmail3" placeholder="Name">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <label for="inputEmail3" class="col-sm-2 col-form-label text-light">გვარი</label>
+				    <div class="col-sm-10">
+				      <input type="email" style="width:25%;" class="form-control" id="inputEmail3" placeholder="Surname">
+				    </div>
+				  </div>
 				  <div class="form-group row">
 				    <label for="inputEmail3" class="col-sm-2 col-form-label text-light">ელ.ფოსტა</label>
 				    <div class="col-sm-10">
@@ -57,10 +82,15 @@
 				    </div>
 				  </div>
 				  <div class="form-group row">
-				    <div class="col-sm-2 text-light">დამახსოვრება</div>
+				    <div class="col-sm-10">
+				    </div>
+				  </div>
+				  <div class="form-group row">
+				    <div class="col-sm-2 text-light">ვეთანხმები</div>
 				    <div class="col-sm-10">
 				      <div class="form-check">
 				        <input class="form-check-input" type="checkbox" id="gridCheck1">
+				        <a href="#"> მოხმარების წესები </a>
 				        <label class="form-check-label" for="gridCheck1">
 				        </label>
 				      </div>
@@ -68,7 +98,7 @@
 				  </div>
 				  <div class="form-group row">
 				    <div class="col-sm-10">
-				      <button type="submit" class="btn btn-primary">Sign in</button>
+				      <button type="submit" class="btn btn-primary">რეგისტრაცია</button>
 				    </div>
 				  </div>
 				</form>
@@ -76,30 +106,58 @@
 			</main>
 
 
-			<section class="container about-us" id="aboutus">
-				<h4 style="margin-top: 5%;"> Vision - პროგრამირების შემსწავლელი პლათფორმა ქართულ ინტერნეტსივრცეში </h4>
-				<img class="d-inline-block col-lg-6" src="img/computer.png" alt="computer">
-				<div class="d-inline-block" style="position: relative;">
-					<div style="position: absolute; top: -130px;">
-						<h4> ვის დააინტერესებს ეს საიტი? </h4>
+			<section class="containter-fluid" id="aboutus">
+				<h4 style="display: flex; justify-content: center; margin-top: 5%;"> Vision - პროგრამირების შემსწავლელი პლათფორმა ქართულ ინტერნეტსივრცეში </h4>
+
+				<div class="flex-container">
+				  <div class="computer-pic"><img src="img/computer.png" alt="computer"></div>
+				  <div style="align-self: center;">
+				  	<h4> ვის დააინტერესებს ეს საიტი? </h4>
 						<h5> მათ, ვისაც უნდათ: </h5>
 					<ul>
 						<li> <h6>ისწავლონ პროგრამირება</h6> </li>
 						<li> <h6>შექმნან საკუთარი ვებ-გვერდი</h6> </li>
 						<li> <h6>გახდნენ კონკურენტუნარიანნი შრომის ბაზარზე</h6> </li>
 					</ul>
-					</div>
+				   </div>
 				</div>
-				
+
+
+
 			</section>
 
 			<section class="container" id="ourcourses">
-				<a href="HtmlAndCss.html"> <img src="img/htmlandcss.png" alt="Html & Css" class="col-sm-6 d-inline-block course-img"> </a>
-				<a href="JavaScript.html"> <img src="img/jscode.png" alt="JavaScript" class="col-sm-6 d-inline-block course-img"> </a>
-				<a href="csharp.html"> <img src="img/csharp.png" alt="C#" class="col-sm-6 d-inline-block course-img"> </a>
-				<a href="Web.html"> <img src="img/web.png" alt="asp.net mvc" class="col-sm-6 d-inline-block course-img"> </a>
+				<ul class="list-unstyled">
+				  <li class="media">
+				    <img src="img/htmlandcss.png" class="mr-3" alt="htmlandcss" style="width: 10%; height: 10%;">
+				    <div class="media-body">
+				      <h5 class="mt-0 mb-1"><strong>HTML</strong></h5>
+				      ჰიპერტექსტური აღწერის ენა, რომელიც განკუთვნილია ვებ-გვერდების შესაქმნელად და ინფორმაციის გასავრცელებლად ინტერნეტის საშუალებით. HTML დაწერილია HTML ელემენტების ფორმით, რომელიც შედგება ტეგებისგან, რომლებიც გვერდის შინაარსში მოქცეულია კუთხიან ფრჩხილებში.
+				    </div>
+				  </li>
+				  <li class="media my-4">
+				    <img src="img/jscode.png" class="mr-3" alt="javascript" style="width: 10%; height: 10%;">
+				    <div class="media-body">
+				      <h5 class="mt-0 mb-1"><strong>JavaScript</strong></h5>
+				      ჯავასქრიფთი სქრიფთული ენაა, რომელიც ძირითადად ვებ სივრცეში გამოიყენება. ის ძირითადად HTML-ის გვერდთანაა მიბმული და მისი მთავარი ფუნქცია ამ გვერდია განვითარება/ საჭირო ფუნქციებს მორგებაა.
+				    </div>
+				  </li>
+				  <li class="media">
+				    <img src="img/csharp.png" class="mr-3" alt="csharp" style="width: 10%; height: 10%;">
+				    <div class="media-body">
+				      <h5 class="mt-0 mb-1"><strong>C#</strong></h5>
+				       ობიექტზე ორიენტირებული, ბრძანებითი, ფუნქციური პროგრამირების ენა დამზადებული Microsoft .NET პლათფორმისთვის 2001 წელს. მისი ერთ-ერთი მთავარი ფუნქცია, ვებ პროგრამირებაა. დღეისათვის C# ერთ-ერთ ყველაზე აქტუალურ პროგრამულ ენას წარმოადგენს.
+				    </div>
+				  </li>
+				  <li class="media">
+				    <img src="img/web.png" class="mr-3" alt="asp.net mvc" style="width: 10%; height: 10%;">
+				    <div class="media-body">
+				      <h5 class="mt-0 mb-1"><strong>.Net core</strong></h5>
+				      .Net core უფასო, ყველასათვის ხელმისაწვდომი ფრეიმვორქია, რომელიც საშუალებას გვაძლევს ვიმუშაოთ როგორც Windows, ასევე Linux და MacOS ოპერატიულ სისტემებზე. პროდუქტი შექმნილია Microsoft-ის მიერ და გამოცემულია MIT-ს ლიცენზიით.
+				    </div>
+				  </li>
+				</ul>
 			</section>
-
 
 			<!-- there were unexpected problems while adding js with the relative path -->
 				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
